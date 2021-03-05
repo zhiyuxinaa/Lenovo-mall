@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../assets/css/reset.css">
+		<link rel="stylesheet" href="../assets/css/public.css">
+		<link rel="stylesheet" href="order_confirm.css">
+		<title></title>
+	</head>
+	<body>
+		<!-- <script src="/demos/googlegg.js"></script> -->
+		<div class="bg"></div>
+		<div class="wrapper">
+			<div class="header">
+				<div class="header-wrapper">
+					<div class="left">
+						<img id="all_top_icon" src="https://p2.lefile.cn/product/adminweb/2019/05/14/5d811034-b989-43a5-98cc-82df4bace7de.png"
+						 style="height:49px;margin-top:-6px;">
+						<p>结算中心</p>
+					</div>
+					<div class="right">
+						<div class="userinfo">
+							<a href="../index/index.html">
+								<span>返回首页</span>
+							</a>
+							|
+							<a href="">
+								<span>user1</span>
+							</a>
+							|
+							<a href="">
+								<span>我的订单</span>
+							</a>
+							|
+							<a href="">
+								<span>退出</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container clearfix">
+				<!-- 收货地址 -->
+				<div class="infoBox clearfix">
+					<p>收货地址</p>
+					<ul class="address-list">
+						<li class="address">
+							<div class="addIcon"></div>
+							<p class="addBtn">添加新地址</p>
+						</li>
+					</ul>
+					<div class="closeAddressBtn">
+						显示更多收货信息
+						<i class="closeAddressBtnIcon"></i>
+					</div>
+				</div>
+				<!-- 支付方式 -->
+				<div class="infoBox clearfix">
+
+					<p class="labelTitle">支付方式</p>
+					<ul>
+						<li class="selected">在线支付</li>
+					</ul>
+				</div>
+				<!-- 送货清单 -->
+				<div class="infoBox">
+					<p class="labelTitle">送货清单</p>
+					<div class="listContent">
+						<div class="left">
+							<ul>
+								<li class="selected">快捷配送</li>
+							</ul>
+						</div>
+						<div class="right">
+							<ul class="product">
+								<li>
+
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<!-- 发票信息 -->
+				<div class="infoBox">
+					<p class="labelTitle">发票信息</p>
+					<ul class="invoiceDetail">
+						<li>电子发票</li>
+						<li>个人</li>
+						<li>商品明细</li>
+						<li><a href="">修改></a></li>
+					</ul>
+				</div>
+				<!-- 优惠券 -->
+				<div class="infoBox">
+					<div class="prompt">
+						<i class="promptIcon reduce"></i>
+						<span class="span1">使用优惠</span>
+						<span class="span2">
+							温馨提示：亲，若您在使用优惠券、优惠码、代金券、乐豆时遇到问题，
+							可
+							<a href="">咨询客服解决</a>
+						</span>
+					</div>
+				</div>
+				<div class="promotionInfo">
+					<ul class="promotionTabs">
+						<div class="left">
+							<li class="active">优惠劵</li>
+							<li>优惠码</li>
+						</div>
+						<li>优惠券码须知</li>
+					</ul>
+					<div class="tabDiv">
+						<div class="couponsDiv test">
+							<span class="couponsTypeTitle active">可用优惠券(0)</span>
+							<span class="couponsTypeTitle">不可用优惠券(3)</span>
+							<!-- 可用 -->
+							<div class="couponsInfo">
+								<div class="imgIcon"></div>
+								<div class="msg">
+									<p class="p1">很遗憾！</p>
+									<p class="p2">您暂无可用的优惠券</p>
+								</div>
+							</div>
+							<!-- 不可用 -->
+							<div class="couponsInfo" style="display: none;">
+								<div class="imgIcon"></div>
+								<div class="msg">
+									<p class="p1">很遗憾！</p>
+									<p class="p2">您暂无不可用的优惠券</p>
+								</div>
+							</div>
+
+						</div>
+						<div class=" test" style="display: none;">
+							<p class="dInfo"></p>
+							<input type="text" placeholder="请输入优惠码">
+							<span class="useBtn">立即使用</span>
+						</div>
+					</div>
+				</div>
+				<!-- 订单备注 -->
+				<div class="infoBox">
+					<p class="labelTitle">订单备注</p>
+					<div class="invoiceDetail">
+						<span>客服经理编码:</span>
+						<input class="managerCode" type="text" placeholder="如果您联系过客服,可以填写其编码">
+					</div>
+					<div class="invoiceDetail">
+						<span>客服经理编码:</span>
+						<textarea placeholder="告诉我您的特殊要求,限100字" class="orderRemark" type="textarea"></textarea>
+					</div>
+				</div>
+				<!-- 结算 -->
+				<div class="settlementInfo">
+					<p>
+						<i></i>
+						<span>
+							我同意
+							<a href="">《联想产品网络销售通用条款和条件》</a>
+						</span>
+					</p>
+					<ul class="settlementList">
+						<li>
+							<span class="settlementCount">
+								<span style="color: #f00;">1</span>
+								件商品，
+							</span>
+							<span class="settlementListName">商品金额：</span>
+							<span class="totalPrice"></span>
+						</li>
+						<li>
+							<span class="settlementListName">优惠：</span>
+							<span class="settlementListPrice">-￥0.00</span>
+						</li>
+						<li>
+							<span class="settlementListName">运费：</span>
+							<span class="settlementListPrice">+￥0.00</span>
+						</li>
+						<li class="shiFuKuan">
+							<span class="settlementListName">实付款：</span>
+							<div class="actualPriceWrapper">
+								<div class="settlementListPrice"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 提交 -->
+				<div class="submitInfo">
+					<span class="fr submitBtn">提交订单</span>
+				</div>
+			</div>
+			<div class="stop-wrapper">
+				<div class="stop">
+					<img src="../images/index/srop/stop.png" alt="">
+				</div>
+			</div>
+			<!-- 弹窗 -->
+			<div class="mask"></div>
+			<div class="dialog">
+				<div class="top">
+					<p class="dialogTitle">
+						<span>添加新地址</span>
+						<i class="close"></i>
+					</p>
+				</div>
+				<div class="center">
+					<div class="xin">
+						<div class="user-name">
+							<input type="text">
+							<div class="input-lable">
+								<span class="requir">*</span>
+								姓名
+							</div>
+						</div>
+						<div class="phone">
+							<input type="text">
+							<div class="input-lable">
+								<span class="requir">*</span>
+								手机号
+							</div>
+						</div>
+					</div>
+					<div class="address-wrapper">
+						<div class="wrap"><input class="input" name="" id="city" type="text" placeholder="请选择" autocomplete="off" readonly="true"><s></s></div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<textarea rows="3" cols="25" maxlength="100"></textarea>
+						</div>
+						<div class="input-lable msg">
+							<span class="requir">*</span>
+							详细地址
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<input type="checkbox">
+					 设为默认地址
+				</div>
+				<div class="dialogBtnGroup">
+					<span class="btn-res">取消</span>
+					<span class="btn-ok">确定</span>
+				</div>
+			</div>
+			<!-- 地址弹窗 -->
+			<!-- <div class="selectAddressByself">
+				
+			</div> -->
+			<!-- 页脚 -->
+			<div class="footer">
+				<ul class="footer-top">
+					<li>
+						<a href="" class="tit">购物指南</a>
+						<a href="">服务商信息</a>
+						<a href="">购买流程</a>
+						<a href="">注册登录</a>
+					</li>
+					<li>
+						<a href="" class="tit">配送方式</a>
+						<a href="">配送方式信息</a>
+						<a href="">签收原则</a>
+						<a href="">物流查询</a>
+					</li>
+					<li>
+						<a href="" class="tit">支付方式</a>
+						<a href="">分期支付</a>
+						<a href="">支付方式</a>
+						<a href="">支付问题</a>
+					</li>
+					<li>
+						<a href="" class="tit">订单信息</a>
+						<a href="">订单信息</a>
+						<a href="">发票信息</a>
+						<a href="">手机激活查询</a>
+					</li>
+					<li>
+						<a href="" class="tit">售后服务</a>
+						<a href="">售后服务总则</a>
+						<a href="">24小时在线客服</a>
+						<a href="">联想服务入口</a>
+						<a href="">热门解决方案</a>
+						<a href="">Lenovo Quick Fix工具</a>
+					</li>
+					<li>
+						<a href="" class="tit">其他说明</a>
+						<a href="">服务承诺</a>
+						<a href="">账户安全</a>
+						<a href="">手机产品购买须知</a>
+						<a href="">环境信息</a>
+
+					</li>
+					<li>
+						<div class="kf-phone">
+							<h3>400-990-8888转4</h3>
+							<span>周一到周日 9:00-21:00</span>
+							<a href=""></a>
+						</div>
+					</li>
+				</ul>
+				<div class="footer-bottom">
+					<div class="footer-bottom-wrapper">
+						<div class="left">
+							版权所有：1998-2020 联想集团
+							<span>|</span>
+							<a href="">法律公告</a>
+							<span>|</span>
+							<a href="">隐私权政策</a>
+							<span>|</span>
+							<a href="">产品安全</a>
+						</div>
+						<div class="right">
+							<a href="">京ICP备11035381</a>
+							<span>|</span>
+							<a href="">京公网安备110108007970号</a>
+							<span>|</span>
+							<a href="">营业执照:91110108700000458B</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../assets/js/data.js"></script>
+		<script src="../assets/js/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="../assets/js/Popt.js"></script>
+		<script type="text/javascript" src="../assets/js/city.json.js"></script>
+		<script type="text/javascript" src="../assets/js/citySet.js"></script>
+		<script src="order_confirm.js"></script>
+		<script>
+			//
+			$("#city").click(function (e) {
+				SelCity(this,e);
+			});
+			$("s").click(function (e) {
+				SelCity(document.getElementById("city"),e);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+.tonglan {
+	width: 100%;
+	min-width: 1200px;
+}
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.v-middle { font-size: 0; }
+.v-middle>* {
+	display: inline-block;
+	vertical-align: middle;
+}
+.v-middle:after {
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}

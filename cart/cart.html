@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../assets/css/reset.css">
+		<link rel="stylesheet" href="../assets/css/public.css">
+		<link rel="stylesheet" href="cart.css">
+		<title>联想商城-购物车</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="header">
+				<div class="top">
+					<ul>
+						<li><a href="../index/index.html">返回首页</a></li>
+						|
+						<li>user1</li>
+						|
+						<li><a href="">我的订单</a></li>
+						|
+					</ul>
+				</div>
+			</div>
+			<!-- logo -->
+			<div class="logo">
+				<img src="../images/cart/image1.jpeg" alt="">
+				<img src="../images/cart/image2.jpeg" alt="">
+			</div>
+			<!-- 购物车头部 -->
+			<div class="buycart" style="display: none;">
+				<table cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<th colspan="3" width="37%">商品</th>
+							<th width="14%">规格</th>
+							<th width="13%">单价</th>
+							<th width="13%">数量</th>
+							<th width="13%">金额</th>
+							<th width="10%">操作</th>
+						</tr>
+					</tbody>
+				</table>
+				<div class="bc_nopro">
+					<h3>您的购物车内暂无商品,您可以</h3>
+					<div class="bc_no_btn">
+						<a href="../index/index.html">选购商品</a>
+					</div>
+				</div>
+			</div>
+			<!-- 有商品时 -->
+			<div class="product-wrapper">
+				<div class="product">
+					<!-- <div class="option">
+						<a href="javascript:void(0)"></a>
+					</div> -->
+					<div class="bc-table">
+						<table cellpadding="0" cellspacing="0" class="tit">
+							<tbody>
+								<tr>
+									<th colspan="3" width="462px">商品</th>
+									<th width="163px">规格</th>
+									<th width="152px">单价</th>
+									<th width="152px">数量</th>
+									<th width="152px">金额</th>
+									<th width="117px">操作</th>
+								</tr>
+							</tbody>
+						</table>
+						<table cellpadding="0" cellspacing="0" class="product-list">
+							<tbody></tbody>
+						</table>
+					</div>
+				</div>
+				<div class="bc-num">
+					<div class="wrapper">
+						<div class="bc-all">
+							<a href="javascript:void(0)" class="checkbox checked all"></a>
+							<span>全选</span>
+						</div>
+						<a href="javascript:void(0)" class="del">删除选中商品</a>
+					</div>
+					<ul style="text-align: right;">
+						<li class="total"></li>
+						<li>优惠节省：0.00</li>
+						<li class="total1">合计：<span class="zong"></span></li>
+					</ul>
+				</div>
+				<div class="bc-probtn">
+					<a href="javascript:void(0)">去结算</a>
+				</div>
+			</div>
+			<!-- 删除弹窗 -->
+			<div class="bg-wrapper">
+				<div class="grey"></div>
+				<div class="selectbox">
+					<div class="box-top">
+						<span>删除操作</span>
+						<a href="javascript:void(0)" class="close">
+							<img src="../images/cart/close.png" alt="">
+						</a>
+					</div>
+					<div class="box-center">
+						<img src="../images/cart/warn.png" alt="">
+						<div class="cont">
+							<p class="red">提示</p>
+							<p>确认删除吗？</p>
+						</div>
+					</div>
+					<div class="box-bottom">
+						<a href="javascript:void(0)" class="btn-ok">确定</a>
+						<a href="javascript:void(0)" class="btn-res">取消</a>
+					</div>
+				</div>
+			</div>
+			<!-- 推荐 -->
+			<div class="cart_recommend_segment">
+				<div class="rcmd-container">
+					<div class="rcmd-title">
+						<span class="_rcmd_decorate"></span>
+						<span class="rcmd-tip">为您推荐</span>
+					</div>
+					<div class="_rcmd_area">
+						<div class="btn-wrapper">
+							<div class="prev-btn">
+								<img src="../images/cart/btn_prev.png" alt="">
+							</div>
+						</div>
+						<div class="hot">
+							<ul>
+								<li>
+									<div class="_rcmd_good_tumb_c"><img src="../images/cart/rcmd/image1.jpeg" alt=""></div>
+									<span class="name">  联想都市简约双肩包B1801 （送电脑远程调修服务） </span>
+									<span class="price"> ￥55</span>
+									
+								</li>
+								<li>
+									<div class="_rcmd_good_tumb_c"><img src="../images/cart/rcmd/image2.jpeg" alt=""></div>
+									<span  class="name"> 联想智能体脂秤X2 故宫文创联名 </span>
+									<span class="price"> ￥109</span>
+									
+								</li>
+								<li>
+									<div class="_rcmd_good_tumb_c"><img src="../images/cart/rcmd/image3.jpeg" alt=""></div>
+									<span class="name">thinkplus都市流行双肩包玄武黑</span>
+									<span class="price">￥199</span>
+									
+								</li>
+								<li>
+									<div class="_rcmd_good_tumb_c"><img src="../images/cart/rcmd/image4.jpeg" alt=""></div>
+									<span class="name">ThinkPad小黑双模鼠标午夜黑</span>
+									<span class="price">￥99</span>
+									
+								</li>
+								<li>
+									<div class="_rcmd_good_tumb_c"><img src="../images/cart/rcmd/image5.jpeg" alt=""></div>
+									<span class="name">2020款小新Pro 13 13.3英寸全面屏轻薄笔记本电脑深空灰</span>
+									<span class="price">￥5499</span>
+									
+								</li>
+								<li>
+									
+									<div class="_rcmd_good_tumb_c"><img src="../images/cart/rcmd/image6.jpeg" alt=""></div>
+									<span class="name">联想无线静音鼠标N911 Pro黑色(送电脑远程调修服务)</span>
+									<span class="price">￥59</span>
+									
+								</li>
+								<li>
+									<div class="_rcmd_good_tumb_c"><img src="../images/cart/rcmd/image7.jpeg" alt=""></div>
+									<span class="name">thinkplus无线鼠标E3</span>
+									<span class="price">￥49</span>
+									
+								</li>
+								<li>
+									<div class="_rcmd_good_tumb_c"><img src="../images/cart/rcmd/image8.jpeg" alt=""></div>
+									<span class="name">thinkplus口红电源黑USB-C 65W</span>
+									<span class="price">￥125</span>
+									
+								</li>
+							</ul>	
+						</div>
+						<div class="btn-wrapper">
+							<div class="next-btn">
+								<img src="../images/cart/btn_next.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- 服务列表 -->
+			<div class="ns_Services-list">
+				<div class="ns_w">
+					<img src="../images/cart/image9.jpeg" alt="">
+				</div>
+			</div>
+			<div class="stop-wrapper">
+				<div class="stop">
+					<img src="../images/index/srop/stop.png" alt="">
+				</div>
+			</div>
+			<!-- 页脚 -->
+			<div class="footer">
+				<ul class="footer-top">
+					<li>
+						<a href="" class="tit">购物指南</a>
+						<a href="">服务商信息</a>
+						<a href="">购买流程</a>
+						<a href="">注册登录</a>
+					</li>
+					<li>
+						<a href="" class="tit">配送方式</a>
+						<a href="">配送方式信息</a>
+						<a href="">签收原则</a>
+						<a href="">物流查询</a>
+					</li>
+					<li>
+						<a href="" class="tit">支付方式</a>
+						<a href="">分期支付</a>
+						<a href="">支付方式</a>
+						<a href="">支付问题</a>
+					</li>
+					<li>
+						<a href="" class="tit">订单信息</a>
+						<a href="">订单信息</a>
+						<a href="">发票信息</a>
+						<a href="">手机激活查询</a>
+					</li>
+					<li>
+						<a href="" class="tit">售后服务</a>
+						<a href="">售后服务总则</a>
+						<a href="">24小时在线客服</a>
+						<a href="">联想服务入口</a>
+						<a href="">热门解决方案</a>
+						<a href="">Lenovo Quick Fix工具</a>
+					</li>
+					<li>
+						<a href="" class="tit">其他说明</a>
+						<a href="">服务承诺</a>
+						<a href="">账户安全</a>
+						<a href="">手机产品购买须知</a>
+						<a href="">环境信息</a>
+			
+					</li>
+					<li>
+						<div class="kf-phone">
+							<h3>400-990-8888转4</h3>
+							<span>周一到周日 9:00-21:00</span>
+							<a href=""></a>
+						</div>
+					</li>
+				</ul>
+				<div class="footer-bottom">
+					<div class="footer-bottom-wrapper">
+						<div class="left">
+							版权所有：1998-2020 联想集团
+							<span>|</span>
+							<a href="">法律公告</a>
+							<span>|</span>
+							<a href="">隐私权政策</a>
+							<span>|</span>
+							<a href="">产品安全</a>
+						</div>
+						<div class="right">
+							<a href="">京ICP备11035381</a>
+							<span>|</span>
+							<a href="">京公网安备110108007970号</a>
+							<span>|</span>
+							<a href="">营业执照:91110108700000458B</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../assets/js/js-cookie.js"></script>
+		<script src="../assets/js/jquery-3.4.1.js"></script>
+		<script src="cart.js"></script>
+	</body>
+</html>
